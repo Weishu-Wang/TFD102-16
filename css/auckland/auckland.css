@@ -1,0 +1,334 @@
+main {
+  padding: 0px 0px 30px;
+  height: 100%;
+}
+
+/* Banner區塊 */
+.main-banner {
+  background-image: url(../../images/auckland/auckland-banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 麵包屑區塊 */
+
+div.breadscrumb {
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 105px;
+}
+
+div.breadscrumb .breadscrumb-list img {
+  height: 20px;
+  padding-top: 5px;
+}
+
+div.breadscrumb .breadscrumb-list {
+  display: flex;
+}
+
+div.breadscrumb .breadscrumb-list a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.breadscrumb .breadscrumb-list a:hover {
+  color: #e01356;
+}
+
+div.breadscrumb .breadscrumb-list li::before {
+  content: "/";
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  color: silver;
+}
+
+div.breadscrumb .breadscrumb-list li:first-child::before {
+  display: none;
+}
+
+/* 內文區塊 */
+
+div.title h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 70px;
+}
+
+div.wrap {
+  margin-top: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+div.wrap .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+div.wrap .text {
+  width: 45%;
+}
+
+div.wrap .picture {
+  width: 50%;
+}
+
+div.wrap .picture img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: -1px -1px 5px silver;
+}
+
+div.wrap .text {
+  /* padding-left: 30px; */
+  line-height: 1.8;
+  background-color: grey;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+div.wrap .item .text p:first-child {
+  padding-bottom: 20px;
+}
+
+.item > :first-child {
+  margin-right: -10%;
+}
+
+.item:nth-child(1) .text {
+  background-color: rgba(211, 211, 211, 0.7);
+}
+.item:nth-child(2) .text {
+  background-color: rgba(211, 211, 211, 0.7);
+}
+.item:nth-child(3) .text {
+  background-color: rgba(211, 211, 211, 0.7);
+}
+.item:nth-child(4) .text {
+  background-color: rgba(211, 211, 211, 0.7);
+}
+
+/* 含有奧克蘭行程套裝區塊 */
+section.hot-schedule .title {
+  margin-top: 50px;
+  text-align: center;
+
+  padding-top: 50px;
+}
+
+.advanture {
+  background-color: #70bd44;
+}
+
+.culture {
+  background-color: #d59235;
+}
+
+.snow {
+  background-color: #0495cf;
+}
+
+.romantic {
+  background-color: #a56072;
+}
+
+section .travel-list .thumbnail {
+  height: 229px;
+  position: relative;
+  overflow: hidden;
+}
+
+section .travel-list .thumbnail img {
+  height: 100%;
+  width: 373px;
+}
+
+section .travel-list li {
+  width: 373px;
+  margin-bottom: 20px;
+}
+
+section .travel-list .thumbnail span {
+  position: absolute;
+  display: block;
+  color: white;
+}
+
+section .travel-list .thumbnail .badge {
+  left: 10px;
+  top: 20px;
+  min-width: 45px;
+  min-height: 45px;
+  text-align: center;
+}
+
+section .travel-list .thumbnail::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+section .travel-list .thumbnail .tag {
+  line-height: 40px;
+  width: 150px;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 20px 0 0;
+  text-align: center;
+}
+
+section .travel-list .detail {
+  padding: 10px 20px 30px;
+  background-color: white;
+}
+
+section .travel-list .detail h4 {
+  font-size: 26px;
+}
+
+section .travel-list .detail .rate {
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+}
+
+section .travel-list .detail .rate img {
+  height: 100%;
+}
+
+section .travel-list .detail .price {
+  font-size: 16px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+section .travel-list .detail .price span {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+section .travel-list .detail .description {
+  font-size: 18px;
+  height: 120px;
+}
+
+section .travel-list .detail .more {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section .travel-list .detail .more a {
+  display: inline-block;
+  padding: 5px 20px;
+  color: black;
+  border: 1px solid #e01356;
+}
+
+section .travel-list .detail .more a:hover {
+  color: white;
+  background-color: #e01356;
+  transition: 0.5s;
+}
+
+section .travel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+section.hot-schedule {
+  background-color: rgba(191, 191, 191, 0.3);
+  /* border-top-right-radius: 100px;
+      border-top-left-radius: 100px; */
+  height: 1350px;
+}
+
+.travel-list li {
+  box-shadow: -10px -10px 9px silver;
+  transition: 0.5s ease-out;
+}
+
+.travel-list li:hover {
+  margin-top: -20px;
+}
+
+.travel-list .thumbnail .tag {
+  box-shadow: 5px 5px 9px black;
+}
+
+/* 奧克蘭相簿區塊 */
+
+section.follow-us .title img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+section.follow-us .title {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+section.follow-us a {
+  font-size: 16px;
+  color: #e01356;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+section.follow-us ul {
+  width: 992px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.follow-us li {
+  width: 233px;
+  height: 201px;
+  margin-bottom: 20px;
+  box-shadow: -1px -1px 5px silver;
+  transition: 0.5s ease-out;
+}
+
+section.follow-us ul img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section.follow-us li:hover {
+  transform: scale(1.1, 1.1);
+}

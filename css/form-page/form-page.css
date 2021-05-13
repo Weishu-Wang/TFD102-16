@@ -1,0 +1,281 @@
+main {
+  padding: 0px 0px 20px;
+  background-color: #f5f6f7;
+}
+
+/* Banner區塊 */
+.main-banner {
+  background-image: url(../../Images/form-page/banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 麵包屑區塊 */
+
+div.breadscrumb {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+div.breadscrumb .breadscrumb-list img {
+  height: 20px;
+  padding-top: 5px;
+}
+
+div.breadscrumb .breadscrumb-list {
+  display: flex;
+}
+
+div.breadscrumb .breadscrumb-list a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.breadscrumb .breadscrumb-list a:hover {
+  color: #e01356;
+}
+
+div.breadscrumb .breadscrumb-list li::before {
+  content: "/";
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  color: silver;
+}
+
+div.breadscrumb .breadscrumb-list li:first-child::before {
+  display: none;
+}
+
+/* 左側區塊 */
+div.wrap {
+  display: flex;
+  margin: 20px 40px;
+}
+section.main-left {
+  width: 65%;
+  background-color: white;
+  border: 1px solid #e9e9e9;
+}
+section.main-left .main-detail {
+  padding: 20px;
+}
+
+section.main-left .main-detail form {
+  margin-top: 20px;
+}
+section.main-left h2 {
+  text-decoration: underline;
+}
+
+section.main-left form h3 {
+  text-align: center;
+  position: relative;
+  margin: 30px 0;
+}
+
+section.main-left form h3:before,
+section.main-left form h3:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background-color: #aaa;
+  width: 42%;
+  height: 1px;
+}
+
+section.main-left form h3:before {
+  left: 58%;
+}
+
+section.main-left form h3:after {
+  right: 58%;
+}
+
+section.one div {
+  margin: 10px 0;
+}
+
+form h4 {
+  margin-bottom: 10px;
+}
+
+form input {
+  margin: 20px 0;
+}
+
+div.traveler-detail .gender label {
+  margin-right: 20px;
+}
+
+form .your-detail .traveler-detail label {
+  font-weight: bold;
+}
+
+form .your-detail .traveler-detail .last-name input,
+form .your-detail .traveler-detail .first-name input,
+form .your-detail .traveler-detail .email input,
+form .your-detail .traveler-detail .birth input,
+form .your-detail .traveler-detail .current-location input,
+form .your-detail .traveler-detail .allergy input,
+form .your-detail .traveler-detail .notes textarea {
+  width: 200px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+form .your-detail .traveler-detail .gender input {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#country {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#notes {
+  resize: vertical;
+  width: 50%;
+  height: 100px;
+}
+
+/* 活動加購選項區塊 */
+
+section.your-event .add-event .event-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.your-event .add-event .event-item li {
+  width: 225px;
+  margin: 15px 0;
+}
+
+section.your-event .add-event .event-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+ul.event-item figure {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul.event-item figure > span {
+  position: absolute;
+  color: white;
+  bottom: 40px;
+  left: 10px;
+  font-size: 20px;
+}
+
+ul.event-item figure .like {
+  background-image: url(../../images/icon-homepage/empty-heart.png);
+  width: 26px;
+  height: 26px;
+  background-size: cover;
+  left: 190px;
+  cursor: pointer;
+}
+
+ul.event-item figure .like:hover {
+  background-image: url(../../images/icon-homepage/solid-heart.png);
+  width: 26px;
+  height: 26px;
+  background-size: cover;
+  left: 190px;
+  cursor: pointer;
+}
+
+section.your-event .add-event .event-item input {
+  height: 20px;
+  width: 30px;
+  margin: 0;
+}
+
+section.your-event .add-event .event-item label {
+  top: -20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button .save a {
+  border: 1px solid #e01356;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.button .save a:hover {
+  background-color: #e01356;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button .pay a {
+  background-color: #e01356;
+  border: 1px solid #e01356;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.button .pay a:hover {
+  background-color: rgba(224, 19, 86, 0.8);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* 右側區塊 */
+
+section.main-right {
+  width: 35%;
+  background-color: white;
+  margin-left: 30px;
+  border: 1px solid #e9e9e9;
+  box-shadow: -1px -1px 9px silver;
+  height: 540px;
+}
+section.main-right .main-detail {
+  padding: 20px;
+}
+
+section.main-right .main-detail h5 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section.main-right .main-detail .content-detail .detail-item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+section.main-right .main-detail .content-detail .detail-item img {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+}

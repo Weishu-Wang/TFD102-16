@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  color: black;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* header部分 */
+nav {
+  width: 1260px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+nav .logo {
+  display: block;
+  width: 100px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+nav .logo img {
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+nav a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  padding: 0 25px;
+  line-height: 80px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .login {
+  height: 100%;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+nav .login-sub-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 40px;
+  top: 80px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1s, z-index 0s ease 1s;
+  margin-top: 5px;
+}
+
+nav .login-sub-nav a {
+  line-height: 45px;
+  text-align: center;
+  color: white;
+}
+
+nav .login-sub-nav a:hover {
+  background-color: #e01356;
+  text-decoration: underline;
+}
+
+nav .login img {
+  width: 50px;
+  height: 50px;
+}
+
+nav .login-main-nav li:hover > .login-sub-nav {
+  display: flex;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+nav .main-nav li:hover > .sub-nav,
+nav .sub-nav li:hover > .sub-nav {
+  display: flex;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+nav .sub-nav {
+  position: absolute;
+  flex-direction: column;
+  /* display: none; */
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 1s, z-index 0s ease 1s;
+  margin-top: 5px;
+}
+
+nav .sub-nav a {
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  width: 120px;
+}
+
+li.north ul a {
+  background-color: white;
+  color: black;
+}
+
+li.south ul li a {
+  background-color: white;
+  color: black;
+}
+
+nav .sub-nav .third {
+  display: none;
+  top: -5px;
+  left: 100%;
+  width: max-content;
+  text-align: center;
+  background-color: white;
+  line-height: 45px;
+  cursor: pointer;
+  border: 1px solid grey;
+}
+
+li .activated1 a:hover {
+  background-color: #70bd44;
+  transition: 0.3s;
+}
+
+li .activated2 a:hover {
+  background-color: #d59235;
+  transition: 0.3s;
+}
+
+li .activated3 a:hover {
+  background-color: #0495cf;
+  transition: 0.3s;
+}
+
+li .activated4 a:hover {
+  background-color: #a56072;
+  transition: 0.3s;
+}
+
+li .north a:hover,
+li .south a:hover {
+  background-color: #e01356;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+li .about-me-hover a:hover {
+  background-color: #e01356;
+  transition: 0.3s;
+}
+
+li .discover-all-destination a:hover {
+  background-color: #e01356;
+  transition: 0.3s;
+}
+
+ul .sub-nav .third li a:hover {
+  background-color: #dcdcdc;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+ul .sub-nav li:hover {
+  text-decoration: underline;
+}
+
+/* Footer區塊 */
+footer {
+  border-top: 1px solid #707070;
+  padding-top: 24px;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+footer .info {
+  width: 450px;
+}
+
+footer .info > p {
+  padding-bottom: 10px;
+}
+
+footer img {
+  width: 145px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+footer > div {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer-top .info p > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+footer .footer-top .info p > a:hover {
+  color: #e01356;
+}
+
+footer .footer-top {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+footer .footer-top > ul {
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .footer-top > ul > li span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .footer-top > ul > li span:hover {
+  cursor: pointer;
+}
+
+footer .footer-top > ul > li .children {
+  margin-top: 20px;
+}
+
+footer .footer-top > ul > li {
+  margin-right: 75px;
+}
+
+ul .children > li > a {
+  color: black;
+}
+
+ul .children > li > a:hover {
+  color: #e01356;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+ul .children > li {
+  line-height: 40px;
+  display: flex;
+  justify-content: left;
+}
+
+footer .footer-bottom {
+  display: flex;
+  height: 170px;
+}
+
+footer .footer-bottom .about p {
+  font-size: 13px;
+}
+
+footer .footer-bottom ul {
+  display: flex;
+  margin-left: 500px;
+}
+
+footer .footer-bottom ul a {
+  width: 60px;
+  display: block;
+  margin-right: 20px;
+}
+
+footer .footer-bottom ul img {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s ease-out;
+}
+
+footer .footer-bottom ul img:hover {
+  margin-top: -15px;
+}
+
+.go-to-top img {
+  width: 60px;
+  height: 60px;
+}
+footer .footer-top {
+  position: relative;
+}
+
+footer .footer-top .go-to-top {
+  position: absolute;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: black;
+  align-items: center;
+  right: 50px;
+  top: -130px;
+  font-weight: bold;
+}

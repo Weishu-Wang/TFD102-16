@@ -1,0 +1,234 @@
+main {
+  padding: 0px 0px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner區塊 */
+.main-banner {
+  background-image: url(../../Images/about-us/about-us-banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 麵包屑區塊 */
+
+div.breadscrumb {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+div.breadscrumb .breadscrumb-list img {
+  height: 20px;
+  padding-top: 5px;
+}
+
+div.breadscrumb .breadscrumb-list {
+  display: flex;
+}
+
+div.breadscrumb .breadscrumb-list a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.breadscrumb .breadscrumb-list a:hover {
+  color: #e01356;
+}
+
+div.breadscrumb .breadscrumb-list li::before {
+  content: "/";
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  color: silver;
+}
+
+div.breadscrumb .breadscrumb-list li:first-child::before {
+  display: none;
+}
+
+/* 內文區塊 */
+
+div.wrap h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.wrap p {
+  text-align: center;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* 行程介紹 */
+div.tour-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(115deg, #7bf 55%, transparent 55%) center center /
+      100% 100%,
+    url(../../images/about-us/tour-banner.jpg) right center/ auto 130%;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+div.tour-container {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.tourbanner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+div.tourbanner-text h2 {
+  border-bottom: 1px solid #333;
+}
+
+/* 文化風情 */
+div.culture-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(245deg, #028c6a 55%, transparent 55%) center
+      center / 100% 100%,
+    url(../../images/about-us/culture-banner.jpg) left center/ auto 120%;
+  margin-bottom: 50px;
+}
+
+div.culture-container {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.culturebanner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  float: right;
+}
+div.culturebanner-text h2 {
+  border-bottom: 1px solid #333;
+}
+
+/* 品牌故事 */
+div.story-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(115deg, #f2ab39 55%, transparent 55%) center
+      center / 100% 100%,
+    url(../../images/about-us/story-banner.jpg) right center/ auto 130%;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+div.story-container {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.storybanner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+div.storybanner-text h2 {
+  border-bottom: 1px solid #333;
+}
+
+/* 明星導覽 */
+div.guide-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(245deg, #a67f78 55%, transparent 55%) center
+      center / 100% 100%,
+    url(../../images/about-us/guide-banner.jpg) left center/ auto 120%;
+  margin-bottom: 50px;
+}
+
+div.guide-container {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.guidebanner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  float: right;
+}
+div.guidebanner-text h2 {
+  border-bottom: 1px solid #333;
+}
+
+/* 網路評價 */
+div.review-banner {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(115deg, #d3b6d8 55%, transparent 55%) center
+      center / 100% 100%,
+    url(../../images/about-us/review-banner.jpg) right center/ auto 130%;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+div.review-container {
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.reviewbanner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+div.reviewbanner-text h2 {
+  border-bottom: 1px solid #333;
+}
+
+div.review-button {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+div.facebook,
+div.google,
+div.tripadvisor {
+  display: flex;
+  align-items: center;
+}
+
+div.facebook img,
+div.google img,
+div.tripadvisor img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+div.review-button a {
+  color: black;
+}
+
+div.review-button a:hover {
+  cursor: pointer;
+  color: #e01356;
+}
