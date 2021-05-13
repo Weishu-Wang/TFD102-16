@@ -9,7 +9,7 @@ main {
 
 /* Banner區塊 */
 .main-banner {
-  background-image: url(../../Images/about-us/about-us-banner.jpg);
+  background-image: url(../../images/about-us/about-us-banner.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;

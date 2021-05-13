@@ -5,7 +5,7 @@ main {
 
 /* Banner區塊 */
 .main-banner {
-  background-image: url(../../Images/form-page/banner.jpg);
+  background-image: url(../../images/form-page/banner.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
