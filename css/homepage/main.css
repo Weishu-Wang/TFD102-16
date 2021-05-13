@@ -4,7 +4,7 @@ main {
 
 /* Banner區塊 */
 .main-banner {
-  background-image: url(../../images/homepage_banner.jpg);
+  background-image: url(../../images/icon-homepage/homepage_banner.jpg);
   height: 400px;
   background-size: cover;
   background-position: center;
