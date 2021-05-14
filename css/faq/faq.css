@@ -1,0 +1,161 @@
+main {
+  padding: 0px 0px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner區塊 */
+.main-banner {
+  background-image: url(../../images/faq/faq-banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 麵包屑區塊 */
+
+div.breadscrumb {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+div.breadscrumb .breadscrumb-list img {
+  height: 20px;
+  padding-top: 5px;
+}
+
+div.breadscrumb .breadscrumb-list {
+  display: flex;
+}
+
+div.breadscrumb .breadscrumb-list a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.breadscrumb .breadscrumb-list a:hover {
+  color: #e01356;
+}
+
+div.breadscrumb .breadscrumb-list li::before {
+  content: "/";
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  color: silver;
+}
+
+div.breadscrumb .breadscrumb-list li:first-child::before {
+  display: none;
+}
+
+/* 主內文區塊 */
+div.title-block h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+div.title-block p {
+  text-align: center;
+}
+
+div.wrap .section-left {
+  width: 20%;
+  border: 1px solid black;
+  padding: 0 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  height: 618px;
+}
+
+div.wrap .section-left li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+div.wrap .section-left li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.wrap .section-left h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div.wrap .section-left ul {
+  padding: 20px 0;
+}
+
+div.wrap .section-left li:hover {
+  cursor: pointer;
+  color: #e01356 !important;
+}
+
+div.wrap .section-left li.active {
+  color: #e01356;
+}
+
+/* 右側區塊 */
+div.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.wrap .section-right {
+  width: 60%;
+
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+div.wrap .section-right h3 {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+div.wrap .section-right li {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid silver;
+  margin-right: 50px;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+div.wrap .section-right h5 {
+  font-size: 18px;
+}
+
+div.wrap .section-right li span {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 20px;
+  color: #e01356;
+}
+
+div.wrap .section-right li h5 {
+  cursor: pointer;
+}
+
+div.wrap .section-right li p {
+  margin-top: 20px;
+}
+
+#event-item,
+#accommodation-item,
+#food-item,
+#pay-item,
+#guide-item,
+#private-item,
+#other-item {
+  display: none;
+}
