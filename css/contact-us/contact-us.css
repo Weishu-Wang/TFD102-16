@@ -1,0 +1,180 @@
+main {
+  padding: 0px 0px 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner區塊 */
+.main-banner {
+  background-image: url(../../images/contact-us/contact-us-banner.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 麵包屑區塊 */
+
+div.breadscrumb {
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+div.breadscrumb .breadscrumb-list img {
+  height: 20px;
+  padding-top: 5px;
+}
+
+div.breadscrumb .breadscrumb-list {
+  display: flex;
+}
+
+div.breadscrumb .breadscrumb-list a {
+  color: grey;
+  text-decoration: none;
+}
+
+div.breadscrumb .breadscrumb-list a:hover {
+  color: #e01356;
+}
+
+div.breadscrumb .breadscrumb-list li::before {
+  content: "/";
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  color: silver;
+}
+
+div.breadscrumb .breadscrumb-list li:first-child::before {
+  display: none;
+}
+
+/* 主內容區塊 */
+
+div.top-wrap h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.top-wrap p {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+div.main-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section.left-section {
+  margin-left: 50px;
+  width: 40%;
+}
+
+section.left-section .last-name input,
+section.left-section .first-name input,
+section.left-section .email input {
+  width: 250px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section.left-section form textarea {
+  resize: vertical;
+  width: 80%;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+section.left-section form label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section.left-section form .travel-category span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.left-section form .travel-category input {
+  margin-bottom: 20px;
+  width: 20px;
+  height: 15px;
+}
+
+section.left-section form .travel-category input:first-child {
+  margin-top: 20px;
+}
+
+div.main-wrap .button a {
+  width: 150px;
+  border: 1px solid#e01356;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+
+div.main-wrap .button {
+  text-align: center;
+}
+
+div.main-wrap .button a:hover {
+  color: white;
+  background-color: #e01356;
+  transition: 0.5s;
+}
+
+/* 右側區塊 */
+
+div.main-wrap .flex-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.right-section {
+  width: 50%;
+  margin-right: 50px;
+}
+
+section.right-section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section.right-section .phone,
+section.right-section .mail,
+section.right-section .contact-me,
+section.right-section .address {
+  display: flex;
+}
+
+section.right-section span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+section.right-section div {
+  margin-bottom: 20px;
+}
+
+section.right-section .contact-me img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+section.right-section .contact-me {
+  align-items: center;
+}
