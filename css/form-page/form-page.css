@@ -254,27 +254,30 @@ section.main-right {
   width: 35%;
   background-color: white;
   margin-left: 30px;
+
+  position: relative;
+}
+section.main-right .key-notes {
+  padding: 20px;
+  position: relative;
   border: 1px solid #e9e9e9;
   box-shadow: -1px -1px 9px silver;
   height: 540px;
 }
-section.main-right .main-detail {
-  padding: 20px;
-}
 
-section.main-right .main-detail h5 {
+section.main-right .key-notes h5 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-section.main-right .main-detail .content-detail .detail-item {
+section.main-right .key-notes .content-detail .detail-item {
   display: flex;
   padding: 10px;
   align-items: center;
 }
 
-section.main-right .main-detail .content-detail .detail-item img {
+section.main-right .key-notes .content-detail .detail-item img {
   height: 35px;
   width: 35px;
   margin-right: 20px;
