@@ -314,7 +314,7 @@ section .travel-list .detail .rate img {
 
 section .travel-list .detail .price {
   font-size: 16px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-weight: 400;
 }
 
@@ -332,6 +332,7 @@ section .travel-list .detail .more {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 section .travel-list .detail .more a {
