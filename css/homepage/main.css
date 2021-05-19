@@ -175,12 +175,31 @@ section .goto a {
 
 section .goto2 a {
   color: white;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  padding: 8px 30px;
-  border-radius: 50px;
-  font-size: 20px;
+  background-color: #e01356;
+  padding: 10px 20px;
+  font-size: 18px;
   display: inline-block;
-  background-size: 400%;
+  width: 150px;
+}
+
+section .viewall-schedule a {
+  color: white;
+  background-color: #e01356;
+  padding: 10px 20px;
+  font-size: 18px;
+  display: inline-block;
+  width: 150px;
+}
+
+section .viewall-schedule a:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgba(224, 19, 86, 0.8);
+}
+
+section .viewall-schedule {
+  text-align: center;
+  margin-top: 30px;
 }
 
 @keyframes sun {
@@ -193,7 +212,9 @@ section .goto a:hover {
   animation: sun 8s infinite;
 }
 section .goto2 a:hover {
-  animation: sun 8s infinite;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: rgba(224, 19, 86, 0.8);
 }
 
 /* 2021最熱門行程區塊 */
