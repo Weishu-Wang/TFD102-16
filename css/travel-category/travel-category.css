@@ -414,3 +414,31 @@ section.follow-us ul img {
 section.follow-us li:hover {
   transform: scale(1.1, 1.1);
 }
+
+/* RWD區塊 */
+
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+
+  section div.wrap {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  section div.wrap div.content {
+    width: 100%;
+  }
+
+  section.content-top > h2.title {
+    width: 70%;
+  }
+
+  section.hot-schedule {
+    height: auto;
+    margin-top: 400px;
+  }
+}

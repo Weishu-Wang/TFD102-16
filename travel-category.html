@@ -7,6 +7,7 @@
     <title>KIWI TOUR 紐西蘭旅遊網站</title>
     <link rel="stylesheet" href="./css/homepage/common.css">
     <link rel="stylesheet" href="./css/travel-category/travel-category.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vender/animate/animate.css">
@@ -83,6 +84,20 @@
                     </ul>
                 </li>    
             </ul>
+            <div class="mobile-nav">
+                <button class="hamburger hamburger--vortex" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <ul>
+                  <li><a href="./travel-category.html">紐西蘭之旅</a></li>
+                  <li><a href="./discover-nz.html">探索紐西蘭</a></li>
+                  <li><a href="./about-us.html">關於我們</a></li>
+                  <li><a href="./faq.html">FAQ專欄</a></li>
+                  <li><a href="./contact-us.html">聯繫我們</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="main-banner"></div>
     </header>
@@ -418,6 +433,13 @@
         </div>
     </footer>
     <!-- Footer區塊結束 -->
+
+    <script>
+        document.querySelector('.mobile-nav').addEventListener('click', function() {
+          this.classList.toggle('active');
+          this.querySelector('.hamburger').classList.toggle('is-active');
+        });
+    </script>
 </body>
 </html>
     
