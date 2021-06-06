@@ -435,6 +435,11 @@ nav .hamburger {
     line-height: 100px;
   }
 
+  nav .mobile-nav.active a:hover {
+    color: #e01356;
+    transition: 0.5s;
+  }
+
   footer > div {
     width: 100%;
   }
@@ -554,5 +559,10 @@ nav .hamburger {
   nav .mobile-nav.active a {
     color: white;
     line-height: 100px;
+  }
+
+  nav .mobile-nav.active a:hover {
+    color: #e01356;
+    transition: 0.5s;
   }
 }

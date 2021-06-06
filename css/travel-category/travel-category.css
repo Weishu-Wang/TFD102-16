@@ -427,6 +427,8 @@ section.follow-us li:hover {
     width: 100%;
     align-items: center;
     height: auto;
+    margin: 0;
+    padding: 0;
   }
 
   section div.wrap div.content {
@@ -436,9 +438,74 @@ section.follow-us li:hover {
   section.content-top > h2.title {
     width: 70%;
   }
+  section .travel-list {
+    flex-direction: column;
+
+    align-items: center;
+    height: auto;
+  }
+
+  div.content div {
+    height: auto;
+  }
+
+  section.content-top div.wrap div.content p {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  section.content-top div.wrap div.thumbnail {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  div.content p:first-child {
+    padding-top: 30px;
+  }
 
   section.hot-schedule {
     height: auto;
     margin-top: 400px;
+  }
+
+  section.hot-schedule div.last {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: auto;
+  }
+
+  .travel-list .last li:first-child {
+    margin-right: 0;
+  }
+
+  section.follow-us .title a {
+    top: 120%;
+    right: 30px;
+  }
+
+  section.follow-us ul {
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  section.follow-us ul li {
+    width: 49%;
+    height: auto;
+  }
+
+  section.follow-us .title img {
+    display: block;
+  }
+
+  section.travel-guide div.wrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .travel-list li:hover {
+    margin-top: 0;
   }
 }
