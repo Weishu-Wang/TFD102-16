@@ -16,7 +16,7 @@ main {
 div.breadscrumb {
   height: 50px;
   margin-top: 10px;
-  padding-left: 105px;
+  padding-left: 40px;
 }
 
 div.breadscrumb .breadscrumb-list img {
@@ -437,6 +437,7 @@ section.follow-us li:hover {
 
   section.content-top > h2.title {
     width: 70%;
+    padding-left: 50px;
   }
   section .travel-list {
     flex-direction: column;
@@ -507,5 +508,26 @@ section.follow-us li:hover {
 
   .travel-list li:hover {
     margin-top: 0;
+  }
+
+  div.wrap .thumbnail {
+    width: 100%;
+  }
+  section .travel-list .thumbnail img {
+    width: 100%;
+  }
+
+  section .travel-list li {
+    width: 100%;
+    height: auto;
+  }
+
+  section .travel-list .detail .description {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-banner {
+    height: 200px;
   }
 }

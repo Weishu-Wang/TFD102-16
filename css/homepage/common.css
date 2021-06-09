@@ -423,7 +423,7 @@ nav .hamburger {
   }
 
   nav .mobile-nav.active .hamburger {
-    height: 157px;
+    height: 100px;
   }
 
   nav .mobile-nav.active ul {
@@ -463,6 +463,7 @@ nav .hamburger {
 
   footer .footer-top .info > p {
     text-align: left;
+    margin-left: 30px;
   }
 
   footer .footer-top > ul {
@@ -501,7 +502,7 @@ nav .hamburger {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   footer > div {
     width: 100%;
   }
@@ -529,7 +530,7 @@ nav .hamburger {
   nav .mobile-nav {
     display: block;
     position: relative;
-    height: 86%;
+    height: 100%;
     width: 50px;
     transition: all 0.3s;
   }
@@ -558,7 +559,8 @@ nav .hamburger {
 
   nav .mobile-nav.active a {
     color: white;
-    line-height: 100px;
+    line-height: 0px;
+    margin-top: 85px;
   }
 
   nav .mobile-nav.active a:hover {

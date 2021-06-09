@@ -1,19 +1,22 @@
-body {
+main {
   background-image: url(../../images/log-in/log-in-banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   object-fit: cover;
-  height: 528px;
+  height: auto;
+  margin-top: -45px;
+  width: 100%;
+  height: auto;
 }
 
 div.bigBox {
   margin: 0 auto;
   padding: 20px 50px;
   background-color: #00000090;
-  width: 400px;
-  height: 450px;
+  width: 40%;
+  height: auto;
   border-radius: 10px;
   text-align: center;
   margin-top: 50px;
@@ -117,4 +120,100 @@ div.or {
 div.inputText img {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 1800px) {
+  nav {
+    width: 100%;
+  }
+
+  nav ul.main-nav {
+    display: none;
+  }
+
+  nav .login-main-nav {
+    display: none;
+  }
+
+  nav .hamburger {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav .mobile-nav {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 50px;
+    transition: all 0.3s;
+  }
+
+  nav .mobile-nav ul {
+    display: none;
+  }
+
+  nav .mobile-nav.active {
+    width: 245px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    background-color: rgba(138, 126, 126, 0.9);
+    z-index: 10;
+  }
+
+  nav .mobile-nav.active .hamburger {
+    height: 157px;
+  }
+
+  nav .mobile-nav.active ul {
+    display: block;
+  }
+
+  nav .mobile-nav.active a {
+    color: white;
+    line-height: 0px;
+    margin-top: 85px;
+  }
+
+  nav .mobile-nav.active a:hover {
+    color: #e01356;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  div.bigBox {
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #00000090;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  div.bigBox .inputBox .inputText input {
+    border: 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    background-color: #00000000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 80%;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+  }
 }

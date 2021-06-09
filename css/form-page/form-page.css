@@ -282,3 +282,61 @@ section.main-right .key-notes .content-detail .detail-item img {
   width: 35px;
   margin-right: 20px;
 }
+
+@media screen and (max-width: 1099px) {
+  main {
+    width: 100%;
+  }
+
+  div.wrap {
+    flex-direction: column;
+  }
+
+  section.main-left {
+    width: 100%;
+  }
+
+  section.main-right {
+    width: 100%;
+  }
+
+  section.main-right .key-notes {
+    display: none;
+  }
+
+  ul.event-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  div.button {
+    flex-direction: column;
+  }
+
+  div.button p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .button .save a {
+    margin-right: 0;
+  }
+
+  .button .pay a {
+    margin-left: 0;
+  }
+
+  div.breadscrumb .breadscrumb-list li::before {
+    margin-left: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    height: 200px;
+  }
+}

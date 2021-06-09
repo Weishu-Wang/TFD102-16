@@ -271,3 +271,9 @@ function showMilfordsound(){
     joseph.style.display="none";
     milfordsound.style.display="block";
 }
+
+document.getElementById("pick-auckland").addEventListener("click",rwdAuckland);
+document.getElementById("pick-rotorua").addEventListener("click",rwdRotoura);
+
+
+

@@ -73,7 +73,7 @@ div.tour-banner {
   height: 400px;
   background: linear-gradient(115deg, #7bf 55%, transparent 55%) center center /
       100% 100%,
-    url(../../images/about-us/tour-banner.jpg) right center/ auto 130%;
+    url(../../images/about-us/tour-banner.jpg) right center/ auto 160%;
   background-repeat: no-repeat;
   margin-bottom: 50px;
   margin-top: 50px;
@@ -101,13 +101,13 @@ div.culture-banner {
   height: 400px;
   background: linear-gradient(245deg, #028c6a 55%, transparent 55%) center
       center / 100% 100%,
-    url(../../images/about-us/culture-banner.jpg) left center/ auto 120%;
+    url(../../images/about-us/culture-banner.jpg) left center/ auto 160%;
   margin-bottom: 50px;
 }
 
 div.culture-container {
   height: 100%;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 div.culturebanner-text {
@@ -128,7 +128,7 @@ div.story-banner {
   height: 400px;
   background: linear-gradient(115deg, #f2ab39 55%, transparent 55%) center
       center / 100% 100%,
-    url(../../images/about-us/story-banner.jpg) right center/ auto 130%;
+    url(../../images/about-us/story-banner.jpg) right center/ auto 160%;
   background-repeat: no-repeat;
   margin-bottom: 50px;
 }
@@ -155,13 +155,13 @@ div.guide-banner {
   height: 400px;
   background: linear-gradient(245deg, #a67f78 55%, transparent 55%) center
       center / 100% 100%,
-    url(../../images/about-us/guide-banner.jpg) left center/ auto 120%;
+    url(../../images/about-us/guide-banner.jpg) left center/ auto 160%;
   margin-bottom: 50px;
 }
 
 div.guide-container {
   height: 100%;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 div.guidebanner-text {
@@ -182,7 +182,7 @@ div.review-banner {
   height: 400px;
   background: linear-gradient(115deg, #d3b6d8 55%, transparent 55%) center
       center / 100% 100%,
-    url(../../images/about-us/review-banner.jpg) right center/ auto 130%;
+    url(../../images/about-us/review-banner.jpg) right center/ auto 160%;
   background-repeat: no-repeat;
   margin-bottom: 50px;
 }
@@ -231,4 +231,143 @@ div.review-button a {
 div.review-button a:hover {
   cursor: pointer;
   color: #e01356;
+}
+
+div.wrapper-rwd {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    width: 100%;
+  }
+
+  div.wrapper-rwd {
+    display: block;
+  }
+
+  div.wrap {
+    width: 100%;
+  }
+
+  div.wrap h1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  div.wrap p {
+    width: 85%;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: left;
+  }
+
+  div.wrapper {
+    display: none;
+  }
+
+  div.wrapper-rwd {
+    width: 100%;
+  }
+  div.tour-banner-rwd {
+    width: 100%;
+    height: auto;
+    background-color: #7bf;
+    margin-top: 50px;
+  }
+
+  div.tour-container-rwd {
+    padding: 10px 20px;
+  }
+
+  div.tourbanner-text-rwd h2 {
+    border-bottom: 1px solid #333;
+  }
+
+  div.thumbnail-rwd {
+    width: 100%;
+    height: auto;
+  }
+  div.thumbnail-rwd img {
+    width: 100%;
+  }
+
+  div.culture-banner-rwd {
+    width: 100%;
+    height: auto;
+    background-color: #028c6a;
+    margin-top: 50px;
+  }
+
+  div.culture-container-rwd {
+    padding: 10px 20px;
+  }
+
+  div.culturebanner-text-rwd h2 {
+    border-bottom: 1px solid #333;
+  }
+  div.story-banner-rwd {
+    width: 100%;
+    height: auto;
+    background-color: #f2ab39;
+    margin-top: 50px;
+  }
+
+  div.story-container-rwd {
+    padding: 10px 20px;
+  }
+
+  div.storybanner-text-rwd h2 {
+    border-bottom: 1px solid #333;
+  }
+
+  div.guide-banner-rwd {
+    width: 100%;
+    height: auto;
+    background-color: #a67f78;
+    margin-top: 50px;
+  }
+
+  div.guide-container-rwd {
+    padding: 10px 20px;
+  }
+
+  div.guidebanner-text-rwd h2 {
+    border-bottom: 1px solid #333;
+  }
+
+  div.review-banner-rwd {
+    width: 100%;
+    height: auto;
+    background-color: #d3b6d8;
+    margin-top: 50px;
+  }
+
+  div.review-container-rwd {
+    padding: 10px 20px;
+  }
+
+  div.review-text-rwd h2 {
+    border-bottom: 1px solid #333;
+  }
+
+  div.review-button {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.facebook {
+    margin-bottom: 10px;
+  }
+
+  div.google {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    height: 200px;
+  }
 }

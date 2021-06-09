@@ -7,6 +7,7 @@
     <title>KIWI TOUR 紐西蘭旅遊網站</title>
     <link rel="stylesheet" href="./css/homepage/common.css">
     <link rel="stylesheet" href="./css/auckland/auckland.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vender/animate/animate.css">
@@ -74,15 +75,30 @@
             </ul>
             <ul class="login-main-nav">
                 <li>
-                    <a class="login" href="./log-in.html" target="_blank">
+                    <a class="login" href="./log-in.html">
                         <img src="./images/icon-homepage/login.png" alt="紐西蘭旅遊網站會員登入">
                     </a>
                     <ul class="login-sub-nav">
-                        <li><a href="./log-in.html" target="_blank">登入</a></li>
-                        <li><a href="./log-in.html" target="_blank">建立帳號</a></li>
+                        <li><a href="./log-in.html">登入</a></li>
+                        <li><a href="./log-in.html">建立帳號</a></li>
                     </ul>
                 </li>    
             </ul>
+            <div class="mobile-nav">
+                <button class="hamburger hamburger--vortex" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <ul>
+                  <li><a href="./travel-category.html">紐西蘭之旅</a></li>
+                  <li><a href="./discover-nz.html">探索紐西蘭</a></li>
+                  <li><a href="./about-us.html">關於我們</a></li>
+                  <li><a href="./faq.html">FAQ專欄</a></li>
+                  <li><a href="./contact-us.html">聯繫我們</a></li>
+                  <li><a href="./log-in.html">會員登入</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="main-banner"></div>
     </header>
@@ -141,6 +157,44 @@
                 <div class="picture">
                     <img src="./images/auckland/bay-of-islands-transfer.jpg" alt="">
                 </div>                
+            </div>
+        </div>
+        <div class="wrap-rwd">
+            <div class="item">
+                <div class="picture">
+                    <img src="./images/auckland/caption.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>歡迎來到奧克蘭！奧克蘭是我們眾多旅遊套餐的起點，是一個充滿活力的多元文化城市，四周環繞著水和長死火山。</p>
+                    <p>紐西蘭最大的城市建在太平洋和塔斯曼海之間狹窄的土地上，為您沉浸在大自然中提供了無數的機會，而且因為您離這裡的海灘永遠都不遠，所以可以在水上嬉戲。我們從奧克蘭出發的紐西蘭之旅的長度不等，因此適合所有人的旅行！</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="picture">
+                    <img src="./images/auckland/enjoy-beautiful-views.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>奧克蘭是紐西蘭人口的三分之一，一年四季都有令人印象深刻的國際和當地美食以及一系列激動人心的文化活動。毛利人的海洋獨木舟活動，法國市場，波利尼西亞節日，農曆新年和排燈節的慶祝活動都是奧克蘭文化之一。</p>
+                    <p>在奧克蘭的天空塔，可提供令人難以置信的360度城市全景，並在夜間點亮。奧克蘭博物館–被視為南半球最好的博物館之一，坐落在該市最古老公園的山頂上。這些位置對於紐西蘭的奧克蘭旅遊套餐必不可少。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="picture">
+                    <img src="./images/auckland/dining-in-britomart.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>奧克蘭有很多事情可以做。皇后街是市中心的主要樞紐，到處都充滿著活力和波西米亞風情。您可以輕鬆地花幾天時間探索奧克蘭中心城市，那裡到處都是生機勃勃的酒吧，咖啡館，美術館，博物館和購物區。</p>
+                    <p>沿著奧克蘭的海濱向西漫步，您會發現Wynyard Quarter繁華的餐廳區，在這裡您可以觀看當天從工作中的漁船上卸下的最新鮮的漁獲物，您可以在水邊的一間酒吧享用比薩或精釀啤酒。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="picture">
+                    <img src="./images/auckland/bay-of-islands-transfer.jpg" alt="">
+                </div>     
+                <div class="text">
+                    <p>如果您的行程有包括奧克蘭的話，請務必走上豪拉基灣的湛藍海水，並探索眾多翡翠島中的至少一個。從城市搭乘渡輪，探索不擁擠的海灘和世界一流的懷赫科島釀酒廠，或劃皮艇前往朗伊托托島，然後步行至260米高的山頂，欣賞奧克蘭市，和港口。</p>
+                    <p>奧克蘭度假套餐可將您帶到奧克蘭地區的遠海岸，為您提供更多的探索機會去了解到奧克的美。</p>
+                </div>           
             </div>
         </div>
         <!-- 含有奧克蘭行程區塊 -->
@@ -374,6 +428,12 @@
         </div>
     </footer>
     <!-- Footer區塊結束 -->
+    <script>
+        document.querySelector('.mobile-nav').addEventListener('click', function() {
+          this.classList.toggle('active');
+          this.querySelector('.hamburger').classList.toggle('is-active');
+        });
+    </script>
 </body>
 </html>
     

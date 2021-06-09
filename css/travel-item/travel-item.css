@@ -753,7 +753,7 @@ div.main-bottom .viewall-btn a:hover {
 
   div.route .route-item .picture .title {
     padding-right: 0;
-    margin-top: 20px;
+    margin: 20px 0;
   }
 
   div.route .show-btn {
@@ -763,7 +763,8 @@ div.main-bottom .viewall-btn a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
   }
 
   div.route .route-include {
@@ -772,7 +773,7 @@ div.main-bottom .viewall-btn a:hover {
 
   div.route .route-include .left-side {
     margin: 0 auto;
-    padding-left: 30px;
+    padding-left: 6px;
     margin-bottom: -15px;
   }
 
@@ -791,6 +792,30 @@ div.main-bottom .viewall-btn a:hover {
 
   div.main-bottom .booking-item {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  div.route .route-item .picture img {
+    width: 100%;
+  }
+
+  div.route .route-item .text {
+    height: auto;
+  }
+
+  div.main-bottom .view-date {
+    margin-left: 30px;
+  }
+
+  div.booking-item .book-btn {
+    margin-top: 20px;
+  }
+
+  div.main-bottom .booking-item {
+    padding: 10px 20px;
+  }
+
+  .main-banner {
+    height: 200px;
   }
 }

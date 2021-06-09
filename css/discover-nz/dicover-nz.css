@@ -16,7 +16,7 @@ main {
 div.breadscrumb {
   height: 50px;
   margin-top: 10px;
-  padding-left: 105px;
+  padding-left: 40px;
 }
 
 div.breadscrumb .breadscrumb-list img {
@@ -138,6 +138,7 @@ div.description .thumbnail img {
 
 div.map-content {
   display: flex;
+  justify-content: center;
 }
 
 div.detail {
@@ -363,4 +364,88 @@ li.marker-left-sp:hover span {
 }
 #milfordsound-text {
   display: none;
+}
+
+div.map-content h3 {
+  display: none;
+}
+
+div.map-content div.city {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    width: 100%;
+  }
+
+  ul.map {
+    display: none;
+  }
+
+  div.description {
+    width: 80%;
+    height: auto;
+
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  div.description.active {
+    margin-top: 50px;
+  }
+
+  section.content-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  div.description .thumbnail img {
+    width: 100%;
+  }
+
+  div.map-content h3 {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.map-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  div.map-content div.city {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  div.map-content div.city > select {
+    width: 80%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  section.content-text h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  section.content-text p {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    height: 200px;
+  }
 }

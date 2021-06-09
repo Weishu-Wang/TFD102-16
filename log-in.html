@@ -7,13 +7,103 @@
     <title>KIWI TOUR 紐西蘭旅遊網站</title>
     <link rel="stylesheet" href="./css/homepage/common.css">
     <link rel="stylesheet" href="./css/log-in/log-in.css">
+    <link rel="stylesheet" href="./css/hamburgers.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vender/animate/animate.css">
 
 
+
 </head>
 <body>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html">
+                <img src="./images/logo.png" alt="紐西蘭旅遊網的logo">
+            </a>
+            <ul class="main-nav">
+                <li>
+                    <a class="cool-link" href="javascript:;">紐西蘭之旅</a>
+                    <ul class="sub-nav">
+                        <li class="activated1"><a href="./travel-category.html">冒險刺激</a></li>
+                        <li class="activated2"><a href="./travel-category.html">知性文化</a></li>
+                        <li class="activated3"><a href="./travel-category.html">冰雪奇緣</a></li>
+                        <li class="activated4"><a href="./travel-category.html">浪漫雙人</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="cool-link" href="./discover-nz.html">探索紐西蘭</a>
+                    <ul class="sub-nav">
+                        <li class="discover-all-destination"><a href="./discover-nz.html">查看所有地區</a></li>
+                        <li class="north">
+                            <a href="javascript:;">北島</a>
+                            <ul class="sub-nav third">
+                              <li><a href="./auckland.html">奧克蘭</a></li>
+                              <li><a href="./auckland.html">羅托魯瓦</a></li>
+                              <li><a href="./auckland.html">威靈頓</a></li>
+                              <li><a href="./auckland.html">螢火蟲洞</a></li>
+                              <li><a href="./auckland.html">哈比村</a></li>
+                              <li><a href="./auckland.html">陶波湖</a></li>
+                              <li><a href="./auckland.html">末日火山</a></li>   
+                            </ul>
+                        </li>
+                        <li class="south">
+                            <a href="javascript:;">南島</a>
+                            <ul class="sub-nav third">
+                              <li><a href="./auckland.html">基督城</a></li>
+                              <li><a href="./auckland.html">提卡波湖</a></li>
+                              <li><a href="./auckland.html">米佛峽灣</a></li>
+                              <li><a href="./auckland.html">瓦納卡</a></li>
+                              <li><a href="./auckland.html">但尼丁</a></li>
+                              <li><a href="./auckland.html">皇后鎮</a></li>
+                              <li><a href="./auckland.html">約瑟夫冰川</a></li>   
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="cool-link" href="./about-us.html">關於我們</a>
+                    <ul class="sub-nav">
+                        <li class="about-me-hover"><a href="./about-us.html">行程介紹</a></li>
+                        <li class="about-me-hover"><a href="./about-us.html">文化風情</a></li>
+                        <li class="about-me-hover"><a href="./about-us.html">品牌故事</a></li>
+                        <li class="about-me-hover"><a href="./about-us.html">明星導覽</a></li>
+                        <li class="about-me-hover"><a href="./about-us.html">網路評價</a></li>
+                    </ul>
+    
+                </li>
+                <li><a class="cool-link" href="./faq.html">FAQ專欄</a></li>
+                <li><a class="cool-link" href="./contact-us.html">聯繫我們</a></li>
+            </ul>
+            <ul class="login-main-nav">
+                <li>
+                    <a class="login" href="./log-in.html">
+                        <img src="./images/icon-homepage/login.png" alt="紐西蘭旅遊網站會員登入">
+                    </a>
+                    <ul class="login-sub-nav">
+                        <li><a href="./log-in.html">登入</a></li>
+                        <li><a href="./log-in.html">建立帳號</a></li>
+                    </ul>
+                </li>    
+            </ul>
+            <div class="mobile-nav">
+                <button class="hamburger hamburger--vortex" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                <ul>
+                  <li><a href="./travel-category.html">紐西蘭之旅</a></li>
+                  <li><a href="./discover-nz.html">探索紐西蘭</a></li>
+                  <li><a href="./about-us.html">關於我們</a></li>
+                  <li><a href="./faq.html">FAQ專欄</a></li>
+                  <li><a href="./contact-us.html">聯繫我們</a></li>
+                  <li><a href="./log-in.html">會員登入</a></li>
+                </ul>
+              </div>
+        </nav>
+        <div class="main-banner"></div>
+    </header>
     <main>
         <div class="bigBox">
             <h1>登入介面</h1>
@@ -45,6 +135,12 @@
             </div>
         </div>
     </main>
-
+    
+    <script>
+        document.querySelector('.mobile-nav').addEventListener('click', function() {
+          this.classList.toggle('active');
+          this.querySelector('.hamburger').classList.toggle('is-active');
+        });
+    </script>
 </body>
 </html>
