@@ -339,4 +339,22 @@ section.main-right .key-notes .content-detail .detail-item img {
   .main-banner {
     height: 200px;
   }
+
+  section.main-left form h3:before,
+  section.main-left form h3:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: #aaa;
+    width: 30%;
+    height: 1px;
+  }
+
+  section.main-left form h3:before {
+    left: 70%;
+  }
+
+  section.main-left form h3:after {
+    right: 70%;
+  }
 }

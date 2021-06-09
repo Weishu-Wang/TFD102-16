@@ -773,7 +773,7 @@ div.main-bottom .viewall-btn a:hover {
 
   div.route .route-include .left-side {
     margin: 0 auto;
-    padding-left: 6px;
+    padding-left: 10px;
     margin-bottom: -15px;
   }
 
@@ -813,6 +813,24 @@ div.main-bottom .viewall-btn a:hover {
 
   div.main-bottom .booking-item {
     padding: 10px 20px;
+  }
+
+  div.route h4:before,
+  div.route h4:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: #aaa;
+    width: 30%;
+    height: 1px;
+  }
+
+  div.route h4:before {
+    left: 70%;
+  }
+
+  div.route h4:after {
+    right: 70%;
   }
 
   .main-banner {
