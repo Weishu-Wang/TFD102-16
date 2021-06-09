@@ -773,12 +773,13 @@ div.main-bottom .viewall-btn a:hover {
 
   div.route .route-include .left-side {
     margin: 0 auto;
-    padding-left: 10px;
     margin-bottom: -15px;
+    width: 100%;
   }
 
   div.route .route-include .right-side {
     margin: 0 auto;
+    width: 100%;
   }
 
   ul.event-item {
