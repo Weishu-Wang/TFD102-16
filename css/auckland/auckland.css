@@ -333,6 +333,10 @@ section.follow-us li:hover {
   transform: scale(1.1, 1.1);
 }
 
+div.wrap-rwd {
+  display: none;
+}
+
 @media screen and (max-width: 1199px) {
   main {
     width: 100%;
